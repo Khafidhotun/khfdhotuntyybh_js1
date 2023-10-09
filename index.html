@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KARTU HASIL STUDI</title>
+</head>
+<body>
+    <h1>KARTU HASIL STUDI<</h1>
+    
+    <!-- If, Else, dan Nested If -->
+    <script>
+        let nilai = 75;
+
+        if (nilai >= 80) {
+            document.write("Selamat! Anda lulus dengan nilai A");
+        } else if (nilai >= 70) {
+            document.write("Anda lulus dengan nilai B");
+        } else {
+            if (nilai >= 60) {
+                document.write("Anda lulus dengan nilai C");
+            } else {
+                document.write("Maaf, Anda belum lulus");
+            }
+        }
+    </script>
+    <hr>
+
+    <!-- Switch Case -->
+    <script>
+        let hari = "Senin";
+
+        switch (hari) {
+            case "Senin":
+                document.write("Hari ini adalah hari aktif");
+                break;
+            case "Sabtu":
+            case "Minggu":
+                document.write("Hari ini adalah hari libur");
+                break;
+            default:
+                document.write("Hari ini adalah hari aktif");
+        }
+    </script>
+    <hr>
+
+    <!-- For Statement -->
+    <script>
+        document.write("<p>Menampilkan angka 1 hingga 5 menggunakan for:</p>");
+        for (let i = 1; i <= 5; i++) {
+            document.write(i + " ");
+        }
+    </script>
+    <hr>
+
+    <!-- While -->
+    <script>
+        document.write("<p>Menampilkan angka 1 hingga 5 menggunakan while:</p>");
+        let angka = 1;
+        while (angka <= 5) {
+            document.write(angka + " ");
+            angka++;
+        }
+    </script>
+    <hr>
+
+    <!-- Do While -->
+    <script>
+        document.write("<p>Menampilkan angka 1 hingga 5 menggunakan do-while:</p>");
+        let x = 1;
+        do {
+            document.write(x + " ");
+            x++;
+        } while (x <= 5);
+    </script>
+    <hr>
+
+    <!-- Function -->
+    <script>
+        function tambah(a, b) {
+            return a + b;
+        }
+
+        let hasil = tambah(5, 3);
+        document.write("<p>Hasil penjumlahan: " + hasil + "</p>");
+    </script>
+</body>
+</html>
